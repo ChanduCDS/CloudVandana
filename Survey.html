@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Customer Survey Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: rgb(6, 208, 249);
+        }
+
+        .survey-form {
+            width: 500px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .survey-form h1 {
+            text-align: center;
+
+        }
+
+        .survey-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .survey-form .name-email-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .survey-form .name-email-container input[type="text"],
+        .survey-form .name-email-container input[type="email"] {
+            flex: 1;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        .survey-form .input-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .survey-form .radio-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .survey-form .radio-container input[type="radio"] {
+            margin: 0;
+        }
+
+        .survey-form button {
+            width: 25%;
+            padding: 10px;
+            background-color: rgb(6, 208, 249);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .foot {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="survey-form">
+        <h1>Customer Survey Form</h1>
+
+        <div class="name-email-container">
+            <div class="name-input">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="email-input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label>Is this the first time you are using our products & services?</label>
+            <div class="radio-container">
+                <input type="radio" name="first_time" value="yes" id="first_time_yes">
+                <label for="first_time_yes">Yes</label>
+                <input type="radio" name="first_time" value="no" id="first_time_no">
+                <label for="first_time_no">No</label>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label>Would you recommend our products & services to your friends and colleagues?</label>
+            <div class="radio-container">
+                <input type="radio" name="recommend" value="yes" id="recommend_yes">
+                <label for="recommend_yes">Yes</label>
+                <input type="radio" name="recommend" value="no" id="recommend_no">
+                <label for="recommend_no">No</label>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label>How satisfied are you with our company overall?</label>
+            <div class="radio-container">
+                <input type="radio" name="satisfaction" value="satisfied" id="satisfaction_satisfied">
+                <label for="satisfaction_satisfied">Satisfied</label>
+                <input type="radio" name="satisfaction" value="undecided" id="satisfaction_undecided">
+                <label for="satisfaction_undecided">Undecided</label>
+                <input type="radio" name="satisfaction" value="unsatisfied" id="satisfaction_unsatisfied">
+                <label for="satisfaction_unsatisfied">Unsatisfied</label>
+            </div>
+        </div>
+
+        <label for="suggestions">Do you have any suggestions for how we can improve our service?</label>
+        <textarea name="suggestions" id="suggestions" cols="65" rows="10"></textarea>
+
+        <button type="submit">Submit</button>
+
+    </div>
+    <div class=foot>
+        <h6>© 2018 Customer Survey Form. All Rights Reserved | Design by W3Layouts </h6>
+
+    </div>
+</body>
+
+</html>
